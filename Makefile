@@ -14,6 +14,7 @@ reinstall:
 	make install
 
 compile:
+	make clean
 	mkdir build
 	stylus -c src/includes/layout.styl -o build
 	pug -P src/countries/**/* -o build
