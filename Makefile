@@ -16,4 +16,8 @@ reinstall:
 compile:
 	mkdir build
 	stylus -c src/includes/layout.styl -o build
-	pug -P src/countries/**/* -o build 
+	pug -P src/countries/**/* -o build
+	rm build/layout.css
+
+zip:
+	zip -r build.zip build
