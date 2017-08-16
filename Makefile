@@ -7,6 +7,7 @@ install:
 
 clean:
 	rm -rf build
+	rm build.zip
 
 reinstall:
 	make clean
