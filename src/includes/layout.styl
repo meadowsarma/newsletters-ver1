@@ -196,10 +196,22 @@ blockquote, li, ol, p, ul
         color #45b5aa
         text-decoration none
         font-weight bold
+
+      img
+        padding-bottom 6px
+        max-width 620px
+        @media (max-width: 650px)
+          max-width 500px
+        @media (max-width: 530px)
+          max-width 380px
+        @media (max-width: 420px)
+          max-width 305px
+
     blockquote, li, ol, p, table, ul
       color #717171
 
     img
+      padding-bottom 6px
       max-width 620px
       @media (max-width: 650px)
         max-width 500px
