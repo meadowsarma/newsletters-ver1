@@ -256,9 +256,16 @@ blockquote, li, ol, p, ul
 /////////// Spacing
 
 .header-container, .articles-container, .footer-container
-  min-width 320px
+  @media (max-width: 650px)
+    max-width 650px
+  @media (max-width: 530px)
+    max-width 530px
+  @media (max-width: 420px)
+    max-width 420px
+    min-width 305px
 
 .header, .articles, .footer
+  padding 2px
   margin auto
   width 620px
   @media (max-width: 650px)
